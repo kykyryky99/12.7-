@@ -1,0 +1,15 @@
+money = int(input('Введите сумму вклада:'))
+deposit = []
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+deposit_TKB = int(money * per_cent['ТКБ']/100)
+deposit_СКБ = int(money * per_cent['СКБ']/100)
+deposit_ВТБ = int(money * per_cent['ВТБ']/100)
+deposit_СБЕР = int(money * per_cent['СБЕР']/100)
+
+deposit.append(deposit_TKB)
+deposit.append(deposit_СКБ)
+deposit.append(deposit_ВТБ)
+deposit.append(deposit_СБЕР)
+
+print(deposit)
+print("Максимальная сумма, которую вы можете заработать -",(deposit[1]))
